@@ -52,6 +52,10 @@ export default App
 
 ```
 
+Output 🙂
+
+![](https://user-images.githubusercontent.com/6068828/126769756-aaf6bb1a-1041-4ccf-bd14-6c4cfe2efe44.png)
+
 ## License
 
 MIT © [keating](https://github.com/madup-inc)
