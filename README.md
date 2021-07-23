@@ -14,26 +14,31 @@ npm install --save react-imagemarker
 
 ```tsx
 import React, { Component } from 'react'
-
 import ImageMarker from 'react-imagemarker'
 import 'react-imagemarker/dist/index.css'
 
-const markers = [
-  {
-    x: 20,
-    y: 20,
-    id: 1,
-  },
-  {
-    x: 50,
-    y: 20,
-    id: 2,
-  },
-]
-
-
 function SomeComponent() {
-  return <ImageMarker src="/some-image.jpg" markers={markers} />
+  const markers = [
+    {
+      x: 20,
+      y: 20,
+      id: 1,
+    },
+    {
+      x: 50,
+      y: 20,
+      id: 2,
+    },
+  ]
+  return (
+    <ImageMarker
+      src="/some-image.jpg"
+      markers={markers}
+      onImageClick={({ x, y }, clickEvent, wrapperDom) => {
+        console.log({ x, y, clickEvent, wrapperDom })
+      }}
+    />
+  )
 }
 ```
 
