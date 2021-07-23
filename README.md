@@ -7,15 +7,15 @@
 ## Install
 
 ```bash
-npm install --save react-imagemarker
+npm install --save @madup-inc/react-imagemarker
 ```
 
 ## Usage
 
 ```tsx
 import React from 'react'
-import ImageMarker from 'react-imagemarker'
-import 'react-imagemarker/dist/index.css'
+import ImageMarker from '@madup-inc/react-imagemarker'
+import '@madup-inc/react-imagemarker/dist/index.css'
 
 const markers = [
   {
