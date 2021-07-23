@@ -1,10 +1,15 @@
 {
   "name": "react-imagemarker",
   "version": "1.0.0",
-  "description": "Made with create-react-library",
-  "author": "keating",
+  "description": "Awesome react imager marker",
+  "keywords": [
+    "madup",
+    "image-marker",
+    "lever"
+  ],
+  "author": "madup-inc",
   "license": "MIT",
-  "repository": "keating/react-imagemarker",
+  "repository": "https://github.com/madup-inc/react-imagemarker.git",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.tsx",
@@ -12,10 +17,11 @@
     "node": ">=10"
   },
   "scripts": {
-    "build": "microbundle-crl --no-compress --format modern,cjs",
-    "start": "microbundle-crl watch --no-compress --format modern,cjs",
+    "build": "microbundle-crl --css-modules false --no-compress --format modern,cjs",
+    "start": "microbundle-crl watch  --css-modules false --no-compress --format modern,cjs",
     "prepare": "run-s build",
     "test": "run-s test:unit test:lint test:build",
+    "reformat": "prettier --write",
     "test:build": "run-s build",
     "test:lint": "eslint .",
     "test:unit": "cross-env CI=1 react-scripts test --env=jsdom",
