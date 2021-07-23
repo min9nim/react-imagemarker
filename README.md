@@ -13,33 +13,43 @@ npm install --save react-imagemarker
 ## Usage
 
 ```tsx
-import React, { Component } from 'react'
+import React from 'react'
 import ImageMarker from 'react-imagemarker'
 import 'react-imagemarker/dist/index.css'
 
-function SomeComponent() {
-  const markers = [
-    {
-      x: 20,
-      y: 20,
-      id: 1,
-    },
-    {
-      x: 50,
-      y: 20,
-      id: 2,
-    },
-  ]
+const markers = [
+  {
+    x: 20,
+    y: 20,
+    id: 1,
+  },
+  {
+    x: 50,
+    y: 20,
+    id: 2,
+  },
+  {
+    x: 40,
+    y: 40,
+    id: 3,
+    render: () => <div style={{fontSize: 30}}>🙂</div>
+  },
+]
+
+const App = () => {
   return (
-    <ImageMarker
-      src="/some-image.jpg"
-      markers={markers}
-      onImageClick={({ x, y }, clickEvent, wrapperDom) => {
-        console.log({ x, y, clickEvent, wrapperDom })
-      }}
-    />
+    <div style={{ width: 500, height: 500 }}>
+      <ImageMarker
+        src="https://www.mountainprofessor.com/images/matterhorn-3-b.jpg"
+        markers={markers}
+        onImageClick={console.log}
+      />
+    </div>
   )
 }
+
+export default App
+
 ```
 
 ## License

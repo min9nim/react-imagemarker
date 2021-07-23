@@ -14,13 +14,19 @@ const markers = [
     y: 20,
     id: 2,
   },
+  {
+    x: 40,
+    y: 40,
+    id: 3,
+    render: () => <div style={{fontSize: 30}}>🙂</div>
+  },
 ]
 
 const App = () => {
   return (
     <div style={{ width: 500, height: 500 }}>
       <ImageMarker
-        src="https://image.bugsm.co.kr/album/images/500/203221/20322119.jpg"
+        src="https://www.mountainprofessor.com/images/matterhorn-3-b.jpg"
         markers={markers}
         onImageClick={console.log}
       />
