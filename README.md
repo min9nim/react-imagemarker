@@ -58,4 +58,4 @@ Output 🙂
 
 ## License
 
-MIT © [keating](https://github.com/madup-inc)
+MIT © [Madup](https://github.com/madup-inc)
