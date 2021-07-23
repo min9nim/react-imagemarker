@@ -23,7 +23,7 @@
 }
 
 .default-marker div {
-  margin-top: -1px;
-  margin-right: -1px;
+  margin-top: 1px;
+  margin-right: 0;
   font-size: 13px;
 }
