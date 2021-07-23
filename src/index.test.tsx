@@ -1,7 +1,7 @@
-import { ExampleComponent } from '.'
+import ImageMarker from '.'
 
 describe('ExampleComponent', () => {
   it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
+    expect(ImageMarker).toBeTruthy()
   })
 })
