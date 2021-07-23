@@ -20,7 +20,7 @@
     "build": "microbundle-crl --css-modules false --no-compress --format modern,cjs",
     "start": "microbundle-crl watch  --css-modules false --no-compress --format modern,cjs",
     "prepare": "run-s build",
-    "test": "run-s test:unit test:build",
+    "test": "run-s test:unit",
     "reformat": "prettier --write",
     "test:build": "run-s build",
     "test:lint": "eslint .",
