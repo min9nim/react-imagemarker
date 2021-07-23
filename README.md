@@ -15,16 +15,28 @@ npm install --save react-imagemarker
 ```tsx
 import React, { Component } from 'react'
 
-import MyComponent from 'react-imagemarker'
+import ImageMarker from 'react-imagemarker'
 import 'react-imagemarker/dist/index.css'
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+const markers = [
+  {
+    x: 20,
+    y: 20,
+    id: 1,
+  },
+  {
+    x: 50,
+    y: 20,
+    id: 2,
+  },
+]
+
+
+function SomeComponent() {
+  return <ImageMarker src="/some-image.jpg" markers={markers} />
 }
 ```
 
 ## License
 
-MIT © [keating](https://github.com/keating)
+MIT © [keating](https://github.com/madup-inc)
