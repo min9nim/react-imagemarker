@@ -32,7 +32,7 @@ const markers = [
     x: 70,
     y: 55,
     id: 3,
-    render: () => <div style={{fontSize: 30}}>🙂</div>
+    render: () => <div style={{ fontSize: 30 }}>🙂</div>,
   },
 ]
 
@@ -42,7 +42,9 @@ const App = () => {
       <ImageMarker
         src="https://lever.me/statics/image/introduce/Group16.svg"
         markers={markers}
-        onImageClick={console.log}
+        onImageClick={({ x, y }, clickEvent, wrapperDom) => {
+          console.log({ x, y, clickEvent, wrapperDom })
+        }}
       />
     </div>
   )
