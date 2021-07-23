@@ -1,6 +1,6 @@
 {
-  "name": "reactimagemarker",
-  "version": "0.0.4",
+  "name": "@madup-inc/react-image-marker",
+  "version": "0.0.5",
   "description": "Awesome react image marker",
   "keywords": [
     "madup",
