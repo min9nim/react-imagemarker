@@ -2,6 +2,7 @@
 import React, { ReactElement, useRef } from 'react'
 import DefaultMarker from './DefaultMarker'
 import './styles.css'
+export { default as DefaultMarker } from './DefaultMarker'
 
 interface IProps {
   src: string
