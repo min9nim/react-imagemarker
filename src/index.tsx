@@ -29,7 +29,12 @@ export default ({ src, markers, onImageClick }: IProps) => {
   return (
     <div
       className="react-imagemarker"
-      style={{ background: `no-repeat center/100% url(${src})` }}
+      style={{
+        background: `url(${src})`,
+        backgroundSize: 'contain',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+      }}
       ref={wrapperRef}
       onClick={handleClick}
     >
